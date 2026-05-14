@@ -1,3 +1,7 @@
+chrome.action.onClicked.addListener(() => {
+  chrome.tabs.create({ url: 'https://emoji-maker.shotaste.com' });
+});
+
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
   if (message.type === 'GET_WORKSPACES') {
     getWorkspaces()
