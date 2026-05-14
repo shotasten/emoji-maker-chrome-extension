@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "絵文字メーカー",
   "version": "0.1.0",
-  "description": "テキストを入力するだけでSlack・Discord・Teams用のオリジナル絵文字が無料で作れます。作った絵文字をSlackに直接アップロード。",
+  "description": "絵文字メーカーで作成した絵文字をSlackに登録するための拡張機能。",
   "permissions": [
     "storage",
     "scripting",
