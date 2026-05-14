@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "絵文字メーカー",
   "version": "0.1.0",
-  "description": "絵文字メーカーで作った絵文字をSlackに直接アップロードします",
+  "description": "テキストを入力するだけでSlack・Discord・Teams用のオリジナル絵文字が無料で作れます。作った絵文字をSlackに直接アップロード。",
   "permissions": [
     "storage",
     "scripting",
@@ -12,7 +12,17 @@
     "https://*.slack.com/*"
   ],
   "action": {
-    "default_popup": "popup/popup.html"
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "48": "icons/icon-48.png",
+      "128": "icons/icon-128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon-16.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
   },
   "background": {
     "service_worker": "background/service-worker.js"

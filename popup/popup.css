@@ -16,11 +16,42 @@ body {
   padding: 16px;
 }
 
+header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.logo {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
 h1 {
   font-size: 15px;
   font-weight: 700;
-  margin-bottom: 16px;
-  color: #4a154b;
+  color: #FF2D78;
+  line-height: 1;
+}
+
+.site-link {
+  font-size: 11px;
+  color: #888;
+  text-decoration: none;
+}
+
+.site-link:hover {
+  text-decoration: underline;
+  color: #FF2D78;
 }
 
 .field {
@@ -46,8 +77,8 @@ input[type="text"] {
 
 select:focus,
 input[type="text"]:focus {
-  border-color: #4a154b;
-  box-shadow: 0 0 0 2px rgba(74, 21, 75, 0.15);
+  border-color: #FF2D78;
+  box-shadow: 0 0 0 2px rgba(255, 45, 120, 0.15);
 }
 
 .name-wrap {
@@ -96,8 +127,8 @@ input[type="text"]:focus {
 
 .drop-zone:hover,
 .drop-zone.dragover {
-  border-color: #4a154b;
-  color: #4a154b;
+  border-color: #FF2D78;
+  color: #FF2D78;
 }
 
 #preview {
@@ -110,7 +141,7 @@ input[type="text"]:focus {
 #upload-btn {
   width: 100%;
   padding: 9px;
-  background: #4a154b;
+  background: #FF2D78;
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -122,7 +153,7 @@ input[type="text"]:focus {
 }
 
 #upload-btn:hover:not(:disabled) {
-  background: #611f69;
+  background: #e0205f;
 }
 
 #upload-btn:disabled {
