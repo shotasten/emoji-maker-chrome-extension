@@ -4,7 +4,7 @@ async function getWorkspaces() {
   return new Promise(resolve => {
     chrome.runtime.sendMessage({ type: 'GET_WORKSPACES' }, response => {
       if (chrome.runtime.lastError) {
-        chrome.storage.local.get(['workspaces'], ({ workspaces = [] }) => resolve(workspaces));
+        resolve([]);
         return;
       }
       resolve(response?.workspaces ?? []);
