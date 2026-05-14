@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Slack Emoji Uploader",
+  "version": "0.1.0",
+  "description": "絵文字をSlackワークスペースに直接アップロードします",
+  "permissions": [
+    "storage",
+    "scripting",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://*.slack.com/*"
+  ],
+  "action": {
+    "default_popup": "popup/popup.html"
+  },
+  "background": {
+    "service_worker": "background/service-worker.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.slack.com/*"
+      ],
+      "js": [
+        "content/slack-token.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
