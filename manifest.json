@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Slack Emoji Uploader",
+  "name": "絵文字メーカー",
   "version": "0.1.0",
-  "description": "絵文字をSlackワークスペースに直接アップロードします",
+  "description": "絵文字メーカーで作った絵文字をSlackに直接アップロードします",
   "permissions": [
     "storage",
     "scripting",
