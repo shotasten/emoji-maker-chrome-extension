@@ -4,7 +4,6 @@
   "version": "0.1.0",
   "description": "絵文字メーカーで作成した絵文字をSlackに登録するための拡張機能。",
   "permissions": [
-    "storage",
     "tabs"
   ],
   "host_permissions": [
