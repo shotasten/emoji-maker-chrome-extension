@@ -9,7 +9,8 @@
     "tabs"
   ],
   "host_permissions": [
-    "https://*.slack.com/*"
+    "https://*.slack.com/*",
+    "https://emoji-maker.shotaste.com/*"
   ],
   "action": {
     "default_popup": "popup/popup.html",
@@ -36,6 +37,15 @@
         "content/slack-token.js"
       ],
       "run_at": "document_idle"
+    },
+    {
+      "matches": [
+        "https://emoji-maker.shotaste.com/*"
+      ],
+      "js": [
+        "content/emoji-maker-bridge.js"
+      ],
+      "run_at": "document_start"
     }
   ]
 }
