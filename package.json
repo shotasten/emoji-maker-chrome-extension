@@ -10,7 +10,7 @@
     "verify:install": "npm ci --ignore-scripts --dry-run"
   },
   "devDependencies": {
-    "archiver": "6.0.2",
+    "archiver": "8.0.0",
     "playwright": "1.62.1"
   }
 }
