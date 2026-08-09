@@ -7,10 +7,10 @@
    cd ../emoji-maker && npm run dev
    ```
 
-2. 依存パッケージをインストール（初回のみ）
+2. 依存パッケージを lockfile 通りにインストール（初回のみ）
    ```bash
-   npm install
-   npx playwright install chromium
+   npm ci
+   npm exec playwright install chromium
    ```
 
 ## リリース
