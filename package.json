@@ -3,11 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
+  "packageManager": "npm@11.9.0",
   "scripts": {
-    "release": "node scripts/release.mjs"
+    "release": "node scripts/release.mjs",
+    "audit": "npm audit --audit-level=high",
+    "verify:install": "npm ci --ignore-scripts --dry-run"
   },
   "devDependencies": {
-    "archiver": "^6.0.2",
-    "playwright": "^1.52.0"
+    "archiver": "6.0.2",
+    "playwright": "1.52.0"
   }
 }
